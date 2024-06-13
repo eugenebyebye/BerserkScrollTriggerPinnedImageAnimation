@@ -1,0 +1,147 @@
+:root {
+  --pr-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Uncial Antiqua", system-ui;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+body {
+  background: #0a0a0a;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100vh;
+  width: auto;
+  font-size: 70px;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+}
+
+.spacer {
+  width: 100%;
+  height: 50vh;
+  background: #ddd;
+}
+
+.work__left {
+  position: relative;
+  width: 54%;
+  z-index: 2;
+}
+
+.work__place {
+  display: flex;
+}
+
+.work__text {
+  margin: auto;
+  width: 80%;
+}
+
+.work__info {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work__num {
+  display: block;
+  line-height: 0.9;
+  text-align: right;
+  font-size: 18px;
+  transform: skewX(-15deg);
+  color: #be2518;
+}
+.title {
+  text-align: right;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: var(--pr-color);
+}
+
+.title .stroke {
+  display: block;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--pr-color);
+}
+
+.work__link {
+  display: block;
+  width: 365px;
+  margin-top: 50px;
+  margin-left: auto;
+  padding: 18px 0;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--pr-color);
+  letter-spacing: 4px;
+  border: 2px solid #490802;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.work__link:hover {
+  background: #a12006;
+  color: #380703;
+  letter-spacing: 1rem;
+}
+
+.work__right {
+  width: 46%;
+  height: auto;
+}
+
+.work__right-bl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+}
+
+.work__img {
+  width: 40vw;
+  height: 30vw;
+  position: relative;
+}
+
+.work__img-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 80px;
+  overflow: hidden;
+}
+
+.work__img-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
